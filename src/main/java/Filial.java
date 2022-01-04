@@ -25,6 +25,9 @@ public class Filial extends Mercado {
 
     @Override
     public String getMercado() {
-        return null;
+        return "Loja: Bahamas 1\n" +
+                "Loja: Bahamas 2";
     }
+
+
 }

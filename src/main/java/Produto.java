@@ -8,7 +8,7 @@ public class Produto {
 
     public String getLoja() {
         if (this.loja == null) {
-            throw new NullPointerException("Loja Inexistente!!!");
+            throw new NullPointerException("Loja Inexistente!");
         }
         return this.loja.getMercado();
     }

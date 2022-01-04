@@ -1,12 +1,12 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 class ProdutoTest {
 
     @Test
-    public void deveRetornarLojaCarro() {
+     void deveRetornarLoja() {
         Filial filial1 = new Filial("Bahamas 1");
 
         Filial filial2 = new Filial("Bahamas 2");
@@ -15,7 +15,7 @@ class ProdutoTest {
         loja.addMercado(filial1);
         loja.addMercado(filial2);
 
-        assertEquals("Loja: Bahamas 1!\n" + "Loja: Bahamas 2", loja.getMercado());
+        assertEquals("Loja: Bahamas 1\n" + "Loja: Bahamas 2", loja.getMercado());
 
     }
 }
